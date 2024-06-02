@@ -1,6 +1,6 @@
 redButton.addEventListener('click', function() {
     // Redirect to the red page
-    window.location.href = 'https://www.highcpmgate.com/jy7ezuk6wj?key=3b34c5d7269b7537e0ccf13ded98698a';
+    window.location.href = 'https://www.highcpmgate.com/d4iv8t01z?key=420d35bfb34e8ae0fbe0eb20243c055c';
     // Store the state of the red button
     sessionStorage.setItem('redButtonClicked', true);
 });
