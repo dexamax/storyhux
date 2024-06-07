@@ -1,6 +1,13 @@
-redButton.addEventListener('click', function() {
-    // Redirect to the red page
-    window.location.href = 'https://www.highcpmgate.com/gu8dzsxcrf?key=97dd37c36dc63d0ebd12015b105b2bb3';
-    // Store the state of the red button
-    sessionStorage.setItem('redButtonClicked', true);
-});
+// adLoader.js
+
+// Function to load an external script
+function loadAdScript(url) {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = url;
+    document.head.appendChild(script); // Append to head or body as needed
+}
+
+// Load the ad script
+loadAdScript('//pl22417838.highcpmgate.com/83/12/f8/8312f879f3b66c46ffa1d1d8cebc1362.js');
+
