@@ -1,0 +1,37 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    
+    background-color: #f0f0f0; /* Optional: Background color */
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.redirect-button {
+    padding: 20px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: -600px;
+}
+
+.redirect-button:hover {
+    background-color: #0056b3;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
