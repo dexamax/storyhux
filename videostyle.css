@@ -1,0 +1,37 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.video-container {
+    position: relative;
+    width: 300px; /* Smaller size for the video */
+    background: #000;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.custom-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 68px;
+    height: 48px;
+    background: url('play-button-icon.png') no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.video-container.playing .custom-play-button {
+    display: none;
+}
