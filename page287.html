@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 287</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <p>කතාව කියවන්න කලින් මේක කියවන්න. <br><br> 
+        මුලින්ම තියෙන කොළ පාට බටන් එක ඔබන්න, ඊටපස්සෙ ඔයාව වෙන පිටුවකට යයි. <br> 
+        ඒ පිටුවේ තප්පර 20ක් විතර ඉන්න, <br><br>
+        ඊටපස්සෙ බැක් වෙලා ඇවිත් ආපහු දෙවෙනියට තියෙන නිල් පාට බටන් එක ඔබන්න, <br> 
+        එතකොට ඔයාව කතාවට කෙලින්ම යයි, <br><br>
+
+    <button id="redButton" class="btnGreen3">ඔබන්න</button><br><br>
+    <button id="greenButton" disabled class="btnBlue3">කතාවට යන්න</button> <br><br>
+
+    <p>ඒක තේරුනේ නැද්ද? <br><br> 
+        එහෙනම් හරියටම කතාවට යන විදිහ බලන්න <br><br>
+        මේ පහල තියෙන <br><br>
+        රතු පාට බටන් ඔබලා යන්න <br><br>
+        එතකොට එන වීඩියෝ එක <br> Play කරලා බලන්න</p>
+
+    <button id="videoBtn" class="btnVideo">බලන්න</button>
+
+    <script>
+        // Get references to the buttons
+        const redButton = document.getElementById('redButton');
+        const greenButton = document.getElementById('greenButton');
+        const videoBtn = document.getElementById('videoBtn');
+
+        // Check if the red button was previously clicked
+        const redButtonClicked = sessionStorage.getItem('redButtonClicked');
+        if (redButtonClicked) {
+            greenButton.removeAttribute('disabled');
+        }
+
+        // Add event listener to the red button
+        
+
+        // Add event listener to the green button
+        greenButton.addEventListener('click', function() {
+            // Check if the red button was clicked
+            const redButtonClicked = sessionStorage.getItem('redButtonClicked');
+            if (!redButtonClicked) {
+                // Redirect to the error page if the red button was not clicked
+                window.location.href = 'error.html';
+            } else {
+                // Redirect to the green page if the red button was clicked
+                window.location.href = 'https://storyhux.blogspot.com/2024/06/blog-post_53.html';
+            }
+        });
+
+        videoBtn.addEventListener('click', function() {
+            // Redirect to the video page
+            window.location.href = 'supportVideo.html'; // Replace with your video URL
+        });
+
+
+        // Refresh the page every 5 seconds
+        setInterval(function() {
+            window.location.reload();
+        }, 15000); // 15000 milliseconds = 15 seconds
+
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
