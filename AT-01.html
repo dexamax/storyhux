@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AT-01</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            flex-direction: column;
+        }
+
+        .container {
+            text-align: center;
+            font-size: 3em;
+            color: #333;
+        }
+
+        .message {
+            font-size: 1.5em;
+            margin-top: -200px;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .ok-button {
+            width: 150px;
+            height: 50px;
+            display: none;
+            font-size: 1em;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            background: blue;
+            color: white;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .small-text {
+            font-size: 0.5em; /* Adjust the font size as needed */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="message">තප්පර 20ක් ඉන්න <br>
+    ඊටපස්සෙ <br> බටන් එක පෙන්නයි <br>
+    ඊටපස්සෙ ඒ බටන් එක ඔබන්න <br>
+    එතකොට කතාවට යයි<br><br>
+    එකපාරම කතාවට ගියෙ නැති වුනොත් <br>
+    දෙතුන් පාරක් උත්සහ කරන්න</div><br><br><br>
+    <div class="container">
+        <div id="countdown">20</div>
+    </div>
+    <a href="https://www.google.com" class="ok-button" id="okButton">OK</a>
+
+    <script src="app.js"></script>
+</body>
+</html>
