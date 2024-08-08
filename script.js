@@ -1,6 +1,6 @@
 redButton.addEventListener('click', function() {
     // Redirect to the red page
-    window.location.href = 'https://www.highratecpm.com/trrc0vqi?key=f338720cb351da92c5123e9da8f7db54';
+    window.location.href = 'https://thabsoasou.com/4/7734397';
     // Store the state of the red button
     sessionStorage.setItem('redButtonClicked', true);
 });
